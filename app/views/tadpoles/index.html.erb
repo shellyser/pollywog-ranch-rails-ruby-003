@@ -1,0 +1,8 @@
+<h1>Tadpoles</h1>
+<ul>
+<% @tadpoles.each do |tadpole| %>
+  <li><%= link_to "#{tadpole.name}", tadpole_path(tadpole) %></li>
+<% end %>
+</ul>
+
+

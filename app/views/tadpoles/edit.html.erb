@@ -1,0 +1,9 @@
+<h1>Edit <%= @tadpole.name %></h1>
+<%= form_for @tadpole do |f| %>
+ <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :color %>
+  <%= f.text_field :color %>
+  <%= f.submit %>
+<% end %>
+<%= link_to "Cancel", tadpole_path %>
