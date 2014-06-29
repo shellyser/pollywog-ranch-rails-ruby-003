@@ -1,11 +1,2 @@
 <h1>Edit <%= @frog.name %></h1>
-<%= form_for @frog do |f| %>
- <%= f.label :name %>
-  <%= f.text_field :name %>
-  <%= f.label :color %>
-  <%= f.text_field :color %>
-  <%= f.label :lives %>
-  <%= f.collection_select(:pond_id, Pond.all, :id, :name) %>
-  <%= f.submit %>
-<% end %>
-<%= link_to "Cancel", frog_path %>
+<%= render 'form' %>
